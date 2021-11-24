@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сума пар чисел</title>
+        <script language = "JavaScript">
+            var firstNumber, // перший рядок, уведений користувачем
+            secondNumber, // другий рядок, уведений користувачем
+            thirdNumber, // третій рядок, уведений користувачем
+            forthNumber, // четвертий рядок, уведений користувачем
+            fifthNumber, // п'ятий рядок, уведений користувачем
+            sixthNumber, // шостий рядок, уведений користувачем
+            number1, // перший доданок
+            number2, // другий доданок
+            number3, // третій доданок
+            number4, // четвертий доданок
+            number5, // п'ятий доданок
+            number6, // шостий доданок
+            sum1, // сума чисел number1 і number6
+            sum2, // сума чисел number2 і number5
+            sum3; // сума чисел number3 і number4
+            // читання першого, введеного користувачем числа у формі рядка
+            firstNumber = window.prompt("Уведіть перше ціле число ", "0");
+            // читання другого, введеного користувачем числа у формі рядка
+            secondNumber = window.prompt("Уведіть друге ціле число ", "0");
+            // читання третього, введеного користувачем числа у формі рядка
+            thirdNumber = window.prompt("Уведіть третє ціле число ", "0");
+            // читання четвертого, введеного користувачем числа у формі рядка
+            forthNumber = window.prompt("Уведіть четверте ціле число ", "0");
+            // читання п'ятого, введеного користувачем числа у формі рядка
+            fifthNumber = window.prompt("Уведіть п'яте ціле число ", "0");
+            // читання шостого, введеного користувачем числа у формі рядка
+            sixthNumber = window.prompt("Уведіть шосте ціле число ", "0");
+            // перетворення даних із строкового типу до цілого типу,
+            number1 = parseInt(firstNumber);
+            number2 = parseInt(secondNumber);
+            number3 = parseInt(thirdNumber);
+            number4 = parseInt(forthNumber);
+            number5 = parseInt(fifthNumber);
+            number6 = parseInt(sixthNumber);
+            // обчислення сум двох чисел
+            sum1 = number1 + number6;
+            sum2 = number2 + number5;
+            sum3 = number3 + number4;
+            var numbers = [sum1, sum2, sum3];
+            numbers = numbers.sort((a,b) => b-a);
+            console.log(numbers);
+            document.writeln("Список сум за спаданням: " + numbers);
+        </script>
+    </head>
+    <body>
+    </body>
+    </html>
